@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header {
+  color: white;
+  background-color: dodgerblue;
+  width: 100%;
+  height: 50px;
+}
+
+.title {
+  text-align: center;
+  padding: 11px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.my_form {
+  text-align: center;
+}
+
+.search {
+  margin: 30px 0;
+  width: 70%;
+  height: 31px;
+  border-radius: 20px;
+  border: solid dodgerblue 2px;
+  background-image: url("./images/search.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 98.7% 50%;
+  padding-right: 31px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*******************/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #fff;
+  padding: 2px 5px;
+  text-align: right;
+}
+th {
+  cursor: pointer;
+  color: #fff;
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 7px 0;
+}
+th.sort-asc::after {
+  content: " ▲";
+}
+th.sort-desc::after {
+  content: " ▼";
+}
+.no-data {
+  color: #888;
+  padding: 12px;
+}
+tr:nth-child(even) {
+  background-color: rgb(137, 195, 253);
+}
+tr:nth-child(odd) {
+  background-color: rgb(178, 216, 255);
+}
